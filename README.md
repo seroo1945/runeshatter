@@ -33,3 +33,10 @@ Aktualizacja: powiększono wizualnie orka o 27% w karcie przeciwników, bez zmia
 
 ## New in this version
 Interactive Heroes section: Warrior / Mage / Rogue and Male / Female switches, using the six original character images. Previous enlarged Orc, shadow mystery enemy, and Seven Seals artwork are retained.
+
+
+## Poprawka układu (2026-11-08)
+- Przywrócono trzy karty klas bohaterów obok siebie.
+- Przełącznik Male / Female nad kartami zmienia wszystkie trzy ilustracje bez przeładowania.
+- Usunięto powiększanie orka do 120% wysokości, które ucinało głowę. Obraz jest teraz w całości widoczny.
+- Do GitHub Pages prześlij ponownie index.html, styles.css, script.js oraz katalog assets (z zachowaniem struktury).
