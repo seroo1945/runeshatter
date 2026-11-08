@@ -54,9 +54,33 @@
 @media(prefers-reduced-motion:reduce){.mystery-haze{animation:none}}
 
 /* Orc Warrior: larger perceived scale, keeping all four cards equal. */
-.enemy-card--orc .character-art img{transform:scale(1.27);transform-origin:center bottom}
+.enemy-card--orc .character-art{position:relative;padding:0;overflow:hidden}
+.enemy-card--orc .character-art img{position:absolute;bottom:0;left:50%;width:150%;max-width:none;height:120%;object-fit:contain;object-position:center bottom;transform:translateX(-50%);transform-origin:center bottom}
+@media(max-width:520px){.enemy-card--orc .character-art img{width:135%;height:116%}}
 /* Fourth enemy remains an ominous silhouette instead of a question mark. */
 .mystery-card .mystery-art{padding:8px 0 0}
 .mystery-card .mystery-art .mystery-creature{position:relative;z-index:1;width:100%;height:100%;object-fit:contain;object-position:center bottom;filter:drop-shadow(0 0 16px rgba(164,59,43,.28));animation:unknown-presence 5s ease-in-out infinite alternate}
 @keyframes unknown-presence{from{filter:drop-shadow(0 0 8px rgba(164,59,43,.12))}to{filter:drop-shadow(0 0 22px rgba(164,59,43,.38))}}
 @media(prefers-reduced-motion:reduce){.mystery-card .mystery-art .mystery-creature{animation:none}}
+
+/* Interactive class and character appearance preview */
+.hero-selector{max-width:990px;margin:44px auto 0}
+.hero-class-tabs,.hero-gender-tabs{display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:10px}
+.hero-class-tab,.hero-gender-tab{cursor:pointer;color:#c8bdb0;background:#151819;border:1px solid #8c65424f;font-family:Georgia,serif;letter-spacing:.16em;font-size:12px;padding:15px 24px;transition:background .2s,border-color .2s,color .2s}
+.hero-gender-tabs{margin-top:16px}
+.hero-gender-tab{font-size:11px;padding:11px 27px}
+.hero-class-tab.is-active,.hero-gender-tab.is-active{color:#f5d5a4;border-color:#d99a49;background:linear-gradient(160deg,#533027,#251d1b)}
+.hero-class-tab:hover,.hero-gender-tab:hover{border-color:#d99a49}
+.hero-class-tab:focus-visible,.hero-gender-tab:focus-visible{outline:2px solid #d99a49;outline-offset:3px}
+.hero-preview{margin-top:25px;display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr);align-items:center;min-height:500px;border:1px solid #b3834d55;background:radial-gradient(ellipse at 35% 55%,#523027a6,#171a1c 65%);overflow:hidden;text-align:left}
+.hero-preview-art{height:510px;display:flex;align-items:flex-end;justify-content:center;overflow:hidden;padding:12px 20px 0}
+.hero-preview-art img{display:block;width:100%;height:100%;object-fit:contain;object-position:center bottom;filter:drop-shadow(0 20px 28px #0009);transition:opacity .22s ease,transform .22s ease}
+.hero-preview-art img.is-changing{opacity:0;transform:translateY(12px)}
+.hero-preview-copy{padding:35px 42px 35px 14px}
+.hero-preview-label{color:#d99a49!important;font-size:11px!important;letter-spacing:.25em}
+.hero-preview-copy h3{font-size:clamp(25px,3vw,42px);margin:12px 0 16px}
+.hero-preview-copy>p:not(.hero-preview-label){color:#c6c0b7;font-size:15px;line-height:1.75}
+.hero-preview-caption{display:block;color:#d99a49;font-size:10px;letter-spacing:.2em;margin-top:42px}
+@media(max-width:760px){.hero-preview{grid-template-columns:1fr;text-align:center}.hero-preview-art{height:420px;padding:15px 12px 0}.hero-preview-copy{padding:22px 20px 35px}.hero-preview-caption{margin-top:24px}.hero-class-tab{padding:13px 16px;font-size:11px}}
+@media(max-width:390px){.hero-class-tabs{gap:6px}.hero-class-tab{padding:12px 10px;font-size:10px}.hero-preview-art{height:350px}}
+@media(prefers-reduced-motion:reduce){.hero-preview-art img{transition:none}}
