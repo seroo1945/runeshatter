@@ -100,3 +100,25 @@
 /* Clearly visible, accessible gender toggle above the original 3 cards. */
 .hero-gender-picker .hero-gender-tab {min-width:112px}
 .hero-gender-picker .hero-gender-tab.is-active {box-shadow:inset 0 0 0 1px #d99a49,0 0 18px #a43b2b33}
+
+/* v5: Orc artwork was constrained by width, so 95% height never applied visually.
+   Widen the image canvas while keeping its aspect ratio and its feet aligned. */
+.enemy-grid .enemy-card--orc .character-art {
+  padding: 4px 0 0;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+.enemy-grid .enemy-card--orc .character-art img {
+  display: block;
+  flex: 0 0 auto;
+  position: static;
+  width: 118%;
+  max-width: none;
+  height: 100%;
+  max-height: none;
+  object-fit: contain;
+  object-position: center bottom;
+  transform: none !important;
+}
