@@ -93,3 +93,10 @@
 @media(min-width:761px){.heroes .hero-cards.character-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
 @media(max-width:760px){.heroes .hero-cards.character-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}.heroes .character-art{height:clamp(145px,37vw,260px);padding:8px 3px 0}.heroes .character-copy{padding:12px 5px 16px;min-height:125px}.heroes .character-copy h3{font-size:clamp(12px,2.8vw,18px)}.heroes .character-copy small{font-size:10px}}
 @media(max-width:390px){.heroes .hero-cards.character-grid{grid-template-columns:1fr;max-width:330px}.heroes .character-art{height:280px}.heroes .character-copy{min-height:0}}
+
+/* FINAL FIX: scale orc down within the image viewport, never crop the head. */
+.enemy-grid .enemy-card--orc .character-art {padding:14px 12px 0;overflow:hidden;align-items:center;justify-content:center}
+.enemy-grid .enemy-card--orc .character-art img {display:block;position:static;flex:none;width:84%;max-width:84%;height:84%;max-height:84%;object-fit:contain;object-position:center center;transform:none!important}
+/* Clearly visible, accessible gender toggle above the original 3 cards. */
+.hero-gender-picker .hero-gender-tab {min-width:112px}
+.hero-gender-picker .hero-gender-tab.is-active {box-shadow:inset 0 0 0 1px #d99a49,0 0 18px #a43b2b33}
