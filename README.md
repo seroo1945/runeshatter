@@ -29,5 +29,4 @@ Update: original rune illustrations supplied by the creator are used on the boar
 
 The Heroes and Enemies sections use seven supplied original Runeshatter character images (Warrior, Mage, Rogue, Goblin Raider, Orc, Troll, Shaman). They are included under `assets/` and referenced with relative paths, compatible with GitHub Pages.
 
-
-Enemy showcase: Goblin Raider, Orc Warrior, Shaman and a mystery card (More horrors await). Troll artwork is intentionally excluded to avoid spoilers.
+Aktualizacja: powiększono wizualnie orka o 27% w karcie przeciwników, bez zmiany wymiarów karty; czwartą kartę zastąpiono przesłaną sylwetką tajemniczego przeciwnika.

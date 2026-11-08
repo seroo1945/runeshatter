@@ -44,3 +44,19 @@
 .story-artwork::after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(to bottom,transparent 64%,rgba(17,21,22,.78) 100%)}
 .story-artwork figcaption{position:absolute;z-index:1;bottom:24px;left:0;right:0;text-align:center;font:600 11px Cinzel,Georgia,serif;letter-spacing:.35em;color:#e8b16b;text-shadow:0 2px 10px #000}
 @media(max-width:760px){.story-artwork{min-height:0}.story-artwork img{min-height:0;height:auto;max-height:none;aspect-ratio:3/4;object-fit:cover}.story-artwork figcaption{bottom:18px;font-size:10px}}
+
+/* Unrevealed fourth adversary: intentionally no monster art or spoilers. */
+.mystery-card .mystery-art{position:relative;isolation:isolate;align-items:center;overflow:hidden;background:radial-gradient(ellipse at 50% 75%,#4b211d 0%,#221e22 38%,#101416 78%)}
+.mystery-haze{position:absolute;inset:-25%;background:radial-gradient(ellipse at 52% 65%,#a43b2b44,transparent 45%),radial-gradient(ellipse at 20% 80%,#d99a4917,transparent 42%);filter:blur(20px);animation:mystery-breathe 5s ease-in-out infinite alternate}
+.mystery-symbol{position:relative;z-index:1;font-family:Georgia,serif;font-size:clamp(110px,14vw,175px);line-height:1;color:#d99a49aa;text-shadow:0 0 20px #a43b2b88,0 0 75px #a43b2b77;transform:translateY(-8px)}
+.mystery-card .character-copy h3{color:#d99a49}
+@keyframes mystery-breathe{from{opacity:.4;transform:scale(.96)}to{opacity:1;transform:scale(1.08)}}
+@media(prefers-reduced-motion:reduce){.mystery-haze{animation:none}}
+
+/* Orc Warrior: larger perceived scale, keeping all four cards equal. */
+.enemy-card--orc .character-art img{transform:scale(1.27);transform-origin:center bottom}
+/* Fourth enemy remains an ominous silhouette instead of a question mark. */
+.mystery-card .mystery-art{padding:8px 0 0}
+.mystery-card .mystery-art .mystery-creature{position:relative;z-index:1;width:100%;height:100%;object-fit:contain;object-position:center bottom;filter:drop-shadow(0 0 16px rgba(164,59,43,.28));animation:unknown-presence 5s ease-in-out infinite alternate}
+@keyframes unknown-presence{from{filter:drop-shadow(0 0 8px rgba(164,59,43,.12))}to{filter:drop-shadow(0 0 22px rgba(164,59,43,.38))}}
+@media(prefers-reduced-motion:reduce){.mystery-card .mystery-art .mystery-creature{animation:none}}
