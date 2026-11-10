@@ -151,3 +151,14 @@
 .art-disclaimer span{color:#8d7760;padding:0 .35em}
 .global-art-notice{padding:22px 24px;text-align:center;background:#1e2223;border-top:1px solid #d99a4938;color:#d5ad78;font:600 10px/1.8 Cinzel,Georgia,serif;letter-spacing:.12em}
 @media(max-width:760px){.art-disclaimer{margin:24px auto -16px!important;font-size:9px!important;letter-spacing:.1em}.global-art-notice{font-size:9px;letter-spacing:.07em}}
+
+/* v1.6 — Early development preview: promotional image is clearly identified as concept art. */
+.first-look{position:relative;background:radial-gradient(ellipse at 50% 20%,#37271d 0%,#171a1c 65%);overflow:hidden}
+.first-look-inner{max-width:1120px;margin:0 auto;padding-top:90px;padding-bottom:90px}
+.first-look-intro{text-align:center;max-width:780px;margin:0 auto 34px}
+.first-look-intro .section-lead{margin:18px auto 0;max-width:700px}
+.first-look-figure{max-width:860px;margin:0 auto;border:1px solid #80603a;background:#111315;box-shadow:0 25px 80px #0009}
+.first-look-figure img{display:block;width:100%;height:auto}
+.first-look-figure figcaption{display:flex;align-items:flex-start;gap:18px;padding:18px 24px;background:#111416;color:#bdb5aa;font-size:12px;line-height:1.65}
+.first-look-figure figcaption strong{flex:0 0 auto;color:#d99a49;font-size:11px;letter-spacing:.12em}
+@media(max-width:760px){.first-look-inner{padding-top:60px;padding-bottom:60px}.first-look-figure figcaption{display:block;padding:16px}.first-look-figure figcaption strong{display:block;margin-bottom:7px}}

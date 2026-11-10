@@ -16,3 +16,11 @@ Static site for GitHub Pages. Deploy `index.html`, `styles.css`, `script.js`, an
 
 ## v1.5 — Artwork status
 Visible WORK IN PROGRESS notices have been added beside concept art, the rune-board mockup, hero/enemy galleries, dialogue UI concept and in the footer. Images and character designs are provisional and may change.
+
+
+## Update v1.6 — Early development preview
+- Added `assets/runeshatter-development-preview.webp` (optimized promotional concept image).
+- Added the `#first-look` section directly below the hero and a Preview navigation link.
+- Image is marked **WORK IN PROGRESS · CONCEPT PREVIEW**; it is not represented as an exact game screenshot.
+- All previous site content and assets are retained.
+- To deploy: upload **the contents** of this archive to the GitHub Pages publishing root (normally the repository root), replacing the old files.
