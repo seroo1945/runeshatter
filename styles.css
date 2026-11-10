@@ -171,3 +171,7 @@
 .hero-actions .button:hover{background:linear-gradient(180deg,#c08b47,#6b3a27 48%,#34211e);box-shadow:0 10px 28px #0009,0 0 20px #c78a4230}
 .hero-actions .button--ghost:hover{background:linear-gradient(180deg,#514236,#242324 65%,#15191a)}
 @media(max-width:760px){.hero-actions .button{padding:17px 27px}}
+
+/* v1.9: Replace the blocky geometric citadel with atmospheric fantasy ruins. */
+.hero-art .citadel{left:0;right:0;bottom:0;width:100%;height:72%;clip-path:none;background: url("assets/hero-valdoria-ruins.svg") center bottom / cover no-repeat;opacity:.78;pointer-events:none;}
+@media(max-width:760px){.hero-art .citadel{height:64%;background-position:center bottom;opacity:.65}}

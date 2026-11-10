@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 750" preserveAspectRatio="xMidYMax slice">
+<defs>
+ <linearGradient id="mist" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#171b1c" stop-opacity="0"/><stop offset="1" stop-color="#101314" stop-opacity=".98"/></linearGradient>
+ <linearGradient id="stone" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#252326" stop-opacity=".78"/><stop offset="1" stop-color="#101314"/></linearGradient>
+ <filter id="fog"><feGaussianBlur stdDeviation="27"/></filter>
+</defs>
+<!-- Distant, irregular ruined Valdorian towers; no geometric skyline blocks -->
+<g fill="#1d2021" opacity=".45">
+ <path d="M0 590Q80 520 145 554L170 506 189 518 207 459 225 477 238 426 252 445 268 502 301 481 328 540 383 522 430 590Z"/>
+ <path d="M1130 610Q1190 545 1231 550L1254 494 1275 512 1291 431 1308 452 1324 396 1342 420 1358 490 1390 471 1435 540 1490 516 1600 590Z"/>
+</g>
+<g fill="url(#stone)" stroke="#3a3030" stroke-width="2" stroke-opacity=".25">
+ <path d="M0 670Q90 598 165 623L189 581 207 575 220 525 236 518 246 480 254 507 267 497 279 543 290 549 311 610 347 594 390 657 458 682 0 750Z"/>
+ <path d="M1160 688Q1210 634 1254 641L1272 599 1289 596 1303 540 1318 533 1329 492 1340 523 1353 511 1367 553 1381 568 1397 618 1453 608 1500 656 1600 638 1600 750 1160 750Z"/>
+ <path d="M0 730Q125 682 216 711T420 710Q510 683 580 726T840 715Q1020 675 1120 714T1400 695Q1510 685 1600 720V750H0Z" fill="#101314" stroke="none"/>
+</g>
+<g stroke="#111719" stroke-width="8" fill="none" opacity=".68" stroke-linecap="round">
+ <path d="M0 415Q65 425 105 506M58 447Q50 397 23 376M105 506Q141 478 149 446M1600 402Q1530 445 1492 519M1550 452Q1571 400 1592 379M1492 519Q1460 479 1431 470"/>
+</g>
+<g filter="url(#fog)" opacity=".5"><ellipse cx="340" cy="635" rx="470" ry="58" fill="#74645d"/><ellipse cx="1290" cy="650" rx="420" ry="52" fill="#655c58"/></g>
+<path fill="url(#mist)" d="M0 460H1600V750H0Z"/>
+</svg>

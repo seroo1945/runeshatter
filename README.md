@@ -31,3 +31,6 @@ Visible WORK IN PROGRESS notices have been added beside concept art, the rune-bo
 
 ## v1.8: Typography
 Removed en dashes and em dashes from all site copy and supporting text. No visual or functional changes.
+
+## v1.9
+Replaced geometric black skyline behind the hero with an atmospheric SVG illustration of Valdorian ruins and fog. Kept the v1.8 buttons, text, graphics, and other sections unchanged.
