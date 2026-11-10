@@ -34,3 +34,20 @@ Removed en dashes and em dashes from all site copy and supporting text. No visua
 
 ## v1.9
 Replaced geometric black skyline behind the hero with an atmospheric SVG illustration of Valdorian ruins and fog. Kept the v1.8 buttons, text, graphics, and other sections unchanged.
+
+## v2.0: Hero background visibility fix
+- Added higher-contrast ruined stone towers and soft fog behind the hero text.
+- Kept the center clear for logo and copy, no rectangular skyline.
+- Bumped CSS cache key to `styles.css?v=20` so GitHub Pages visitors receive new styling.
+- Upload the entire archive contents to the repository root, including `assets/hero-valdoria-ruins-v2.svg`.
+
+## v2.1: Two-phone preview and clean links
+- Replaced the full promotional poster with two phones on transparent background.
+- Added three independent feature highlights below the phones.
+- Added canonical and Open Graph URL for the official GitHub Pages site.
+- The Share action now shares the official GitHub Pages URL, not a local file URL or a link with tracking parameters.
+- Bumped CSS and JS cache keys. All existing sections, art and fantasy buttons remain.
+
+## v2.2 URL cleanup
+
+On page load, legacy query parameters such as `?v=13&utm_source=chatgpt.com` are removed from the visible address using `history.replaceState`, preserving the current section anchor (`#journey`) and unrelated parameters. All navigation links remain local anchors. No redirect or reload occurs.

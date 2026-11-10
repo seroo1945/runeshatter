@@ -175,3 +175,26 @@
 /* v1.9: Replace the blocky geometric citadel with atmospheric fantasy ruins. */
 .hero-art .citadel{left:0;right:0;bottom:0;width:100%;height:72%;clip-path:none;background: url("assets/hero-valdoria-ruins.svg") center bottom / cover no-repeat;opacity:.78;pointer-events:none;}
 @media(max-width:760px){.hero-art .citadel{height:64%;background-position:center bottom;opacity:.65}}
+
+/* v2.0: clearly visible ruined stone silhouettes; replaces invisible v1.9 treatment. */
+.hero-art .citadel {
+  inset:auto 0 0; width:100%; height:78%;
+  clip-path:none !important;
+  background-image:url("assets/hero-valdoria-ruins-v2.svg") !important;
+  background-repeat:no-repeat; background-position:center bottom; background-size:cover;
+  opacity:1 !important; filter:none;
+}
+.hero:after { background:linear-gradient(0deg,var(--bg) 0%,transparent 19%),linear-gradient(90deg,#101314a8,transparent 22%,transparent 78%,#101314a8); }
+@media(max-width:760px) { .hero-art .citadel { height:70%; background-size:auto 100%; background-position:center bottom; opacity:.9 !important; } }
+
+/* v2.1: transparent two-phone preview and independent feature highlights */
+.first-look{background:radial-gradient(ellipse at 50% 23%,rgba(77,50,36,.22),transparent 64%),#171a1c}
+.first-look-figure{max-width:1050px;margin:0 auto;border:0;background:transparent;box-shadow:none}
+.first-look-figure img{display:block;width:100%;height:auto;filter:drop-shadow(0 22px 32px rgba(0,0,0,.46))}
+.first-look-figure figcaption{display:flex;justify-content:center;align-items:baseline;flex-wrap:wrap;gap:8px 15px;padding:12px 12px 0;background:transparent;text-align:center}
+.first-look-features{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:32px;max-width:980px;margin:48px auto 0;text-align:center}
+.first-look-features article{padding:0 12px;background:transparent;border:0}
+.first-look-feature-icon{display:block;color:#d49b50;font-size:30px;line-height:1.3;margin-bottom:13px}
+.first-look-features h3{color:#f0e5d5;font-family:Georgia,serif;letter-spacing:.11em;font-size:17px;margin:0 0 12px}
+.first-look-features p{color:#bdb5aa;font-size:14px;line-height:1.7;margin:0}
+@media(max-width:760px){.first-look-features{grid-template-columns:1fr;gap:30px;margin-top:36px}.first-look-features article{max-width:360px;margin:auto}.first-look-figure figcaption{padding:8px 10px 0}.first-look-figure img{width:110%;max-width:none;margin-left:-5%}}
