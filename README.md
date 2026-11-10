@@ -1,10 +1,10 @@
-# Runeshatter — GitHub Pages teaser v1.3
+# Runeshatter — GitHub Pages teaser v1.4
 
 Static site for GitHub Pages. Deploy `index.html`, `styles.css`, `script.js`, and `assets/` at repository root. No backend or build required.
 
 ## Story and platform corrections
 - Lore reflects the current approved story: Serath and the Order of the Seven Wardens; the pact with the Voice Beyond the Veil; seven seals imprisoning innocent souls; Aldren Veyr breaking the Seal of Silence to save Elira; the false voice; ruined Wrzosowice; the fallen Order member; Grûmak as a protective chieftain rather than the village's destroyer.
-- Android is the first release target; iOS is a **future plan**, not an announced simultaneous release. No dates or availability are claimed.
+- Android is labeled **COMING SOON** and iOS **COMING 2027** (target, subject to change). No monetization promises are published.
 - Existing art is preserved, but explicitly provisional; screenshots and dialogue visuals are concepts, not final in-game assets.
 - The 25 fights / five regions of Act I remain a development plan.
 
