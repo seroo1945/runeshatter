@@ -1,5 +1,14 @@
-RUNESHATTER — korekta skali Orc Warrior (v4)
+# Runeshatter — GitHub Pages teaser v1.3
 
-Ork zajmuje 95% wysokości obszaru ilustracji, bez przycinania. Pozostałe sekcje, grafiki i przełącznik płci pozostają bez zmian.
+Static site for GitHub Pages. Deploy `index.html`, `styles.css`, `script.js`, and `assets/` at repository root. No backend or build required.
 
-Wgraj zawartość ZIP do głównego katalogu repozytorium GitHub.
+## Story and platform corrections
+- Lore reflects the current approved story: Serath and the Order of the Seven Wardens; the pact with the Voice Beyond the Veil; seven seals imprisoning innocent souls; Aldren Veyr breaking the Seal of Silence to save Elira; the false voice; ruined Wrzosowice; the fallen Order member; Grûmak as a protective chieftain rather than the village's destroyer.
+- Android is the first release target; iOS is a **future plan**, not an announced simultaneous release. No dates or availability are claimed.
+- Existing art is preserved, but explicitly provisional; screenshots and dialogue visuals are concepts, not final in-game assets.
+- The 25 fights / five regions of Act I remain a development plan.
+
+## Publishing checklist
+- Review art rights and story spoilers before publishing.
+- Provide a genuine social, community or mailing-list destination for a follow button; the current page has sharing only.
+- Verify responsive display on mobile and the GitHub Pages URL after deployment.
