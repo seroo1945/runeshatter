@@ -51,3 +51,6 @@ Replaced geometric black skyline behind the hero with an atmospheric SVG illustr
 ## v2.2 URL cleanup
 
 On page load, legacy query parameters such as `?v=13&utm_source=chatgpt.com` are removed from the visible address using `history.replaceState`, preserving the current section anchor (`#journey`) and unrelated parameters. All navigation links remain local anchors. No redirect or reload occurs.
+
+## v2.3
+- Reworded the EARN YOUR VICTORIES feature description to remove repetition.
