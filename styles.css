@@ -145,3 +145,9 @@
 .share-status{min-height:24px;color:#d9b77d!important;font-size:12px!important}
 .rune-board{grid-template-columns:repeat(7,minmax(0,1fr))}
 @media(max-width:760px){.journey-grid{grid-template-columns:1fr}.hero-actions,.release-actions{flex-direction:column}.hero-actions .button,.release-actions .button{justify-content:center;width:min(100%,330px)}.hero-proof{font-size:9px!important;letter-spacing:.12em}.dialogue-frame{margin:0 8px}}
+
+/* v1.5 — clear, restrained artwork status notices */
+.art-disclaimer{margin:28px auto -24px!important;text-align:center;color:#d5ad78!important;font:600 10px/1.7 Cinzel,Georgia,serif!important;letter-spacing:.17em;text-transform:uppercase;max-width:90%}
+.art-disclaimer span{color:#8d7760;padding:0 .35em}
+.global-art-notice{padding:22px 24px;text-align:center;background:#1e2223;border-top:1px solid #d99a4938;color:#d5ad78;font:600 10px/1.8 Cinzel,Georgia,serif;letter-spacing:.12em}
+@media(max-width:760px){.art-disclaimer{margin:24px auto -16px!important;font-size:9px!important;letter-spacing:.1em}.global-art-notice{font-size:9px;letter-spacing:.07em}}
