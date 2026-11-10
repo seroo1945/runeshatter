@@ -54,3 +54,11 @@ On page load, legacy query parameters such as `?v=13&utm_source=chatgpt.com` are
 
 ## v2.3
 - Reworded the EARN YOUR VICTORIES feature description to remove repetition.
+
+## v2.4: Custom domain
+- Canonical and Open Graph URLs now use https://runeshattergame.com/.
+- Open Graph image is an absolute HTTPS URL; added Twitter card metadata.
+- Share button now uses the custom domain.
+- Added root CNAME file to preserve GitHub Pages custom domain across deployments.
+- No visual design changes.
+- DNS and Enforce HTTPS are configured in OVH and GitHub, not in this ZIP.
